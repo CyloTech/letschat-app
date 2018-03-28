@@ -13,5 +13,6 @@ RUN chmod +x /*.sh
 
 ADD configs/settings.yml /settings.yml
 
+EXPOSE 80
 
 CMD ["/entrypoint.sh"]

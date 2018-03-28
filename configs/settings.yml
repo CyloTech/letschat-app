@@ -9,13 +9,7 @@ env: production # development / production
 http:
   enable: true
   host: '0.0.0.0'
-  port: 5000
-
-https:
-  enable: false
-  port: 5001
-  key: key.pem
-  cert: certificate.pem
+  port: 80
 
 files:
   enable: true
@@ -38,3 +32,6 @@ auth:
   providers: [local]
   local:
     enableRegistration: true
+
+rooms:
+  private: true
